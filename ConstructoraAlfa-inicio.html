@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+
+<html class="light" lang="es-PE">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>Constructoras Alfa | Página de Inicio</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
+    <!--<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700;800&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet" />-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-fixed": "#ffdbcd",
+                        "secondary": "#a43d00",
+                        "inverse-on-surface": "#eff1f3",
+                        "outline-variant": "#c4c6cf",
+                        "secondary-container": "#fd6c22",
+                        "tertiary-container": "#2b3648",
+                        "surface-container-low": "#f2f4f6",
+                        "inverse-primary": "#aec7f7",
+                        "surface-bright": "#f7f9fb",
+                        "surface": "#f7f9fb",
+                        "on-background": "#191c1e",
+                        "on-tertiary-container": "#949fb4",
+                        "surface-dim": "#d8dadc",
+                        "tertiary-fixed-dim": "#bcc7dd",
+                        "surface-container-high": "#e6e8ea",
+                        "primary-container": "#1b365d",
+                        "outline": "#74777f",
+                        "secondary-fixed-dim": "#ffb597",
+                        "on-primary-fixed-variant": "#2e476f",
+                        "on-secondary-fixed-variant": "#7d2d00",
+                        "on-tertiary-fixed": "#111c2c",
+                        "on-error": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "on-secondary": "#ffffff",
+                        "inverse-surface": "#2d3133",
+                        "surface-container-highest": "#e0e3e5",
+                        "on-surface-variant": "#44474e",
+                        "background": "#f7f9fb",
+                        "on-error-container": "#93000a",
+                        "tertiary-fixed": "#d8e3fa",
+                        "on-primary": "#ffffff",
+                        "surface-variant": "#e0e3e5",
+                        "primary-fixed-dim": "#aec7f7",
+                        "on-primary-fixed": "#001b3d",
+                        "tertiary": "#162132",
+                        "on-primary-container": "#f9f9f9",
+                        "on-surface": "#191c1e",
+                        "primary": "#002046",
+                        "on-secondary-container": "#591d00",
+                        "error-container": "#ffdad6",
+                        "surface-tint": "#465f88",
+                        "primary-fixed": "#d6e3ff",
+                        "on-secondary-fixed": "#360f00",
+                        "on-tertiary-fixed-variant": "#3c475a",
+                        "surface-container": "#eceef0",
+                        "surface-container-lowest": "#ffffff",
+                        "error": "#ba1a1a",
+                        "brand-blue": "#1B365D",
+                        "brand-orange": "#F26419"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "container-max": "1280px",
+                        "margin-mobile": "16px",
+                        "unit": "8px",
+                        "gutter": "24px",
+                        "margin-desktop": "40px"
+                    },
+                    "fontFamily": {
+                        "display-lg-mobile": ["Hanken Grotesk"],
+                        "display-lg": ["Hanken Grotesk"],
+                        "headline-md": ["Hanken Grotesk"],
+                        "label-md": ["Inter"],
+                        "headline-lg": ["Hanken Grotesk"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "500" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }]
+                    },
+                    "animation": {
+                        "fade-in-up": "fadeInUp 0.8s ease-out forwards"
+                    },
+                    "keyframes": {
+                        "fadeInUp": {
+                            "0%": { opacity: "0", transform: "translateY(20px)" },
+                            "100%": { opacity: "1", transform: "translateY(0)" }
+                        }
+                    }
+                },
+            },
+        }
+    </script>
+    <style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+
+        .glass-nav {
+            background: #f7f9fbf2;
+            backdrop-filter: blur(12px);
+        }
+
+        .reveal.active {
+            animation: fadeInUp 0.8s ease-out forwards;
+        }
+
+        .reveal-left.active {
+            animation: fadeInLeft 0.8s ease-out forwards;
+        }
+
+        .reveal-right.active {
+            animation: fadeInRight 0.8s ease-out forwards;
+        }
+
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @media (max-width: 370px) {
+            .contact-item {
+                flex-direction: column !important;
+                align-items: center !important;
+                text-align: center !important;
+            }
+
+            .contact-text-lg {
+                font-size: 16px !important;
+            }
+
+            .contact-text-sm {
+                font-size: 13px !important;
+            }
+        }
+    </style>
+
+</head>
+
+<body class="bg-background text-on-surface font-body-md overflow-x-hidden">
+    <!-- NAVBAR PC -->
+    <nav class="sticky top-0 z-50 glass-nav border-b border-outline-variant bg-surface dark:bg-inverse-surface w-full">
+        <div
+            class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop h-20 flex justify-between items-center">
+            <div class="flex items-center gap-8">
+                <!--LOGO-->
+                <img alt="Constructoras Alfa Logo" class="h-14 w-auto px-[5px] md:px-0"
+                    src="https://lh3.googleusercontent.com/aida/ADBb0uh5Igsjq0z0-KTPLA2b2fBxr1GgdvSahuHLdbwEXVHPok3oDK0qSGkimgD_-noU2GsvUnDc-2UdTSy5Ud9gowOcxkVdlLE5BswnMDT2zyJ4GSoiNVVPqNckYqZ1j-6WLvi92ocedugz8_P9MT5vpfvGJa5leDYHop25ci_2C0vnraix9VvgFvdSm0TlNYq38ZQepmzBQfh_dWOyIN3l40s4ez9FYLHtcvmrf-PZMrTIOeU74kLowAYO3yU" />
+                <!--PAGINAS DE NAVBAR-->
+                <div class="hidden lg:flex gap-8 items-center h-full">
+                    <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors flex items-center h-full"
+                        href="#">Inicio</a>
+                    <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors flex items-center h-full"
+                        href="#">Nosotros</a>
+                    <a class="font-label-md text-label-md text-primary border-b-2 border-primary flex items-center h-full"
+                        href="#">Servicios</a>
+                    <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors flex items-center h-full"
+                        href="#">Contacto</a>
+                </div>
+            </div>
+
+            <div class="flex items-center gap-4">
+                <!--BARRA DE BÚSQUEDA-->
+                <div
+                    class="flex items-center lg:bg-surface-container lg:border lg:border-outline-variant lg:rounded lg:px-3 lg:py-1.5">
+                    <i class="fa-solid fa-magnifying-glass text-primary lg:text-outline text-xl cursor-pointer"></i>
+                    <input class="hidden lg:block bg-transparent border-none focus:ring-0 text-sm w-32 font-body-md"
+                        placeholder="Buscar..." type="text" />
+                </div>
+                <!--INICIO DE SESION-->
+                <button
+                    class="flex items-center gap-2 bg-primary text-on-primary px-4 sm:px-5 py-2.5 rounded-sm hover:opacity-90 transition-all font-label-md">
+                    <span class="fa-regular fa-user text-lg"></span>
+                    <span class="inline hidden lg:inline">Iniciar Sesión</span>
+                </button>
+                <!--MENU ICONO OCULTO-->
+                <button class="lg:hidden text-primary p-2 flex items-center justify-center" id="mobileMenuBtn"
+                    onclick="toggleDrawer()">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <!-- MENU NAVBAR TABLET/MOVIL -->
+    <div class="fixed inset-0 z-[60] bg-black/40 opacity-0 pointer-events-none transition-opacity duration-300"
+        id="mobileDrawer">
+        <aside
+            class="fixed inset-y-0 left-0 w-80 bg-surface shadow-lg flex flex-col transform -translate-x-full transition-transform duration-300 ease-in-out">
+            <!--LOGO Y BOTON CERRAR. DEBE CAMBIARSE-->
+            <div class="p-6 border-b border-outline-variant flex justify-between items-center">
+                <span class="font-headline-md text-headline-md text-primary font-bold">Constructoras Alfa</span>
+                <button class="text-on-surface-variant" id="closeDrawer">
+                    <span class="fa-solid fa-xmark text-2xl" data-icon="close"></span>
+                </button>
+            </div>
+            <!--PAGINAS-->
+            <div class="p-4 flex flex-col gap-2">
+                <a class="bg-primary-container text-on-primary-container rounded-full px-4 py-3 flex items-center gap-4 font-label-md"
+                    href="#">
+                    Inicio movil
+                </a>
+                <a class="text-on-surface-variant hover:bg-surface-container-high rounded-full px-4 py-3 flex items-center gap-4 font-label-md transition-colors"
+                    href="#nosotros">
+                    Nosotros
+                </a>
+                <a class="text-on-surface-variant hover:bg-surface-container-high rounded-full px-4 py-3 flex items-center gap-4 font-label-md transition-colors"
+                    href="#servicios">
+                    Servicios
+                </a>
+                <a class="text-on-surface-variant hover:bg-surface-container-high rounded-full px-4 py-3 flex items-center gap-4 font-label-md transition-colors"
+                    href="#contacto">
+                    Contacto
+                </a>
+            </div>
+        </aside>
+    </div>
+
+    <main>
+        <!--HERO-->
+        <section
+            class="reveal active animate-fade-in-up relative w-full min-h-[85vh] flex items-center overflow-hidden">
+            <div class="absolute inset-0 z-0">
+                <div
+                    class="absolute inset-0 bg-gradient-to-r from-primary/95 via-primary/60 to-transparent z-10 lg:from-primary/90">
+                </div>
+                <img alt="Proyectos de ingeniería civil masivos en Perú"
+                    class="w-full h-full object-cover lg:object-center object-[75%]"
+                    src="https://lh3.googleusercontent.com/aida-public/AB6AXuCuMhDapJlUO98WhjFDseu5x83mXgdSsq-I_TxlqNJxA8vKpw8VFvBqv1UJqyaDCEGdxqBUxh9KV0Wx-GzzcXZk4WkXSHzbya15QEdeM297l-l95EkyhqFPn2hEzcZbY3plVDQ7J-7oSADq06OK-sM_OUXyAFmFHAB-p7GJC7GIPF_KqW5fJLco4yzwij__41WDXWpmZ5iACfuE5W_LBHMjuyqFbLsOW3RBcecP5j5z-FYCR3MZg4QqkvOdhcrH_Fdaoy4eLGeD6iY" />
+            </div>
+            <div class="relative z-20 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto w-full py-20">
+                <div class="max-w-2xl text-white">
+                    <span
+                        class="inline-block py-1.5 px-3 bg-secondary-container text-on-secondary-container font-label-md text-xs tracking-widest uppercase mb-6 rounded-sm">Ingeniería
+                        con Precisión</span>
+                    <h1
+                        class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg mb-6 leading-tight">
+                        Construyendo el Futuro del <span class="text-secondary-fixed">Perú Moderno</span>
+                    </h1>
+                    <p class="font-body-lg text-body-lg mb-10 text-surface-container opacity-95 leading-relaxed">
+                        Lideramos proyectos de ingeniería civil, supervisión de obras y remodelaciones con los más altos
+                        estándares técnicos y normativos en todo el territorio nacional.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <button
+                            class="bg-secondary-container text-white px-8 py-4 font-label-md font-bold text-lg hover:brightness-110 transition-all flex items-center justify-center gap-2 group shadow-lg">
+                            Solicitar Cotización
+                            <i class="fa-solid fa-arrow-right transition-transform group-hover:translate-x-1"></i>
+                        </button>
+                        <button
+                            class="border-2 border-white/60 text-white px-8 py-4 font-label-md font-bold text-lg hover:bg-white/10 hover:border-white transition-all flex items-center justify-center gap-2 backdrop-blur-sm">
+                            Ver Portafolio
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--NOSOTROS-->
+        <section class="reveal py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto active"
+            id="nosotros">
+            <div class="grid lg:grid-cols-2 gap-16 items-start">
+                <!--IMAGEN-->
+                <div class="reveal-left relative">
+                    <div
+                        class="absolute -top-4 -left-4 w-32 h-32 border-t-4 border-l-4 border-secondary-container z-10">
+                    </div>
+                    <img alt="Modelos arquitectónicos y planos técnicos"
+                        class="w-full aspect-[4/3] object-cover relative z-0"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDE9uboux7Th91YGGrgqwHGJalL78qKhHmgHFLnLUc8LYNl7JahNDgQLzRpD68keXZB2TDgc9SS3iKqj5n-pISZ0UTCh13Vd8jpY84X_AwauQcRriS7X8HJX_HpjdX61UDoQYhaq9rvGoFan7OS1l2FW2oaUr9noEMOIg3OQ-vHw8vMevIUlKVN-FfEIGCHjJFge4hMDawPDPemDRITIo4EAQ11JDubBTpXvMtDvmogKU508pOYXJ1vSEywj6IEyeQqwIIEzUO1KNE" />
+                    <div class="mt-6">
+                        <p class="font-label-md italic text-brand-blue text-lg">"La ingeniería no solo es cálculo, es la
+                            base de la seguridad social en cada estructura que levantamos."</p>
+                    </div>
+                </div>
+                <!--TEXTO-->
+                <div class="reveal-right flex flex-col gap-6">
+                    <div class="h-1 w-20 bg-primary"></div>
+                    <h2 class="font-headline-lg text-headline-lg text-primary">Sobre Nosotros</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Con 4 años de experiencia sólida en el mercado peruano, **Constructoras Alfa** se ha consolidado
+                        como un referente de confiabilidad técnica. Nuestra misión es transformar la visión de nuestros
+                        clientes en realidades estructurales seguras y eficientes.
+                    </p>
+
+
+                    <h2 class="font-headline-lg text-headline-lg text-primary">Nuestra Misión</h2>
+                    <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        En Estructuras Alfa trabajamos para brindar soluciones integrales de ingeniería y construcción
+                        que contribuyan
+                        al crecimiento seguro y sostenible de nuestros clientes, ofreciendo servicios de diseño
+                        estructural, supervisión de obras civiles
+                        y remodelaciones comerciales con altos estándares de calidad, responsabilidad técnica y
+                        cumplimiento normativo.
+                        Nos enfocamos en atender a pequeñas y medianas empresas con un servicio cercano, eficiente y
+                        comprometido con la seguridad,
+                        la innovación y la confianza en cada proyecto ejecutado.
+                    </p>
+                </div>
+
+            </div>
+
+            <!--CUALIDADES-->
+            <div class="max-w-2xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
+                <div class="flex items-center gap-4 p-4 bg-surface-container border border-outline-variant">
+                    <i class="fa-solid fa-check text-primary mt-1 text-2xl" data-icon="verified"></i>
+                    <div>
+                        <h4 class="font-headline-md text-headline-md text-sm mb-1">Expertos nacionales</h4>
+                        <p class="text-on-surface-variant text-sm">Altamente capacitados y con conocimiento de la
+                            normativa técnica de edificación
+                            en Perú (RNE).</p>
+                    </div>
+                </div>
+                <div class="flex items-center gap-4 p-4 bg-surface-container border border-outline-variant">
+                    <i class="fa-solid fa-forward-fast text-primary mt-1 text-2xl" data-icon="speed"></i>
+                    <div>
+                        <h4 class="font-headline-md text-headline-md text-sm mb-1">Eficiencia Operativa</h4>
+                        <p class="text-on-surface-variant text-sm">Optimizamos el desarrollo y uso de recursos sin
+                            comprometer la integridad
+                            de las obras.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICIOS -->
+        <section class="reveal bg-surface-container-low pb-24 md:pt-24 pt-8 active" id="servicios">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+                <div class="text-center mb-16 max-w-3xl mx-auto">
+                    <h2 class="font-headline-lg text-headline-lg mb-4 text-primary">Nuestras Soluciones Técnicas</h2>
+                    <p class="font-body-md text-on-surface-variant">Soluciones integrales de ingeniería bajo estándares
+                        internacionales y cumplimiento estricto de seguridad.</p>
+                </div>
+                <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-12 auto-rows-auto">
+                    <!-- Diseño Estructural -->
+                    <div
+                        class="lg:col-span-8 group relative overflow-hidden bg-white border border-outline-variant p-6 md:p-8 flex flex-col justify-end min-h-[300px]">
+                        <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-20"
+                            src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj4gcC-5YV7Qso23RK37e6_ro3y1aWIC0xYs-rGRp7kS3sWQGhRCVsihsbclaQVdxgOFYJ5GPFEU0k0Gba5VZ1crNiYwf2QhUng4hq9DI2kTysaaQE0gy1twjg5_uf0hpVor-wfoLZGi-OZLVwfvMZjFAnMPsGGJe6TSL4gWXSBfcVvGf5Pgiv6Yn0pMWgNx0AMf0QH0uef3VkJeW67psWcUkLjH8nMxsufT3xaIuOgCBzO3aWWIOvPhWN1g-3pHhVAOGpqaXB4gs" />
+                        <div class="relative z-10">
+                            <div class="flex items-center gap-4 mb-2">
+                                <i class="fa-solid fa-compass-drafting text-4xl text-primary"></i>
+                                <h3 class="font-headline-md text-headline-md text-primary">Diseño Estructural</h3>
+                            </div>
+                            <p class="text-on-surface-variant max-w-md">Cálculo y modelamiento sísmico-resistente para
+                                edificaciones residenciales, comerciales e industriales.</p>
+                            <p class="text-on-surface-variant max-w-md">&nbsp;</p>
+                            <p class="text-on-surface-variant max-w-md">Nuestros ingenieros dominan el diseño y
+                                elaboración de estructuras resistentes y adecuadas para todas las necesidades.</p>
+                        </div>
+                        <a class="mt-4 text-primary font-bold text-sm flex items-center gap-2 group" href="#">
+                            Saber más <i
+                                class="fa-solid fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                    <!-- Supervisión de Obras -->
+                    <div
+                        class="lg:col-span-4 bg-primary text-on-primary p-6 md:p-8 flex flex-col justify-center border border-outline-variant min-h-[300px]">
+                        <div class="flex items-center gap-4 mb-2">
+                            <i class="fa-solid fa-eye text-4xl text-on-primary-container"></i>
+                            <h3 class="font-headline-md text-headline-md text-secondary-fixed">Supervisión de Obras</h3>
+                        </div>
+                        <p class="opacity-80 text-sm">Control riguroso de calidad, costos y tiempos. Aseguramos que lo
+                            planeado se ejecute a la perfección.</p>
+                        <p class="text-on-surface-variant max-w-md">&nbsp;</p>
+                        <p class="opacity-80 text-sm">Contamos con los profesionales más capacitados del país.</p>
+                        <a class="mt-4 text-primary font-bold text-sm flex items-center gap-2 group" href="#"
+                            style="color: white !important;;">
+                            Saber más <i
+                                class="fa-solid fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                    <!-- Remodelación PYMES -->
+                    <div
+                        class="lg:col-span-4 bg-white border border-outline-variant p-6 md:p-8 flex flex-col justify-between min-h-[350px]">
+                        <div>
+                            <div class="flex items-center gap-4 mb-4">
+                                <i class="fa-solid fa-shop text-4xl text-secondary"></i>
+                                <h3 class="font-headline-md text-headline-md text-primary">Remodelación PYMES</h3>
+                            </div>
+                            <p class="text-on-surface-variant text-sm">Remodelación PYMES
+
+                                Adecuación de locales comerciales con enfoque en funcionalidad operativa y estética
+                                corporativa, optimizando los espacios para mejorar la eficiencia del trabajo, la
+                                experiencia del cliente y la identidad visual de la marca. Se realizan mejoras
+                                estructurales, redistribución de ambientes, actualización de acabados e instalaciones
+                                eléctricas y sanitarias, garantizando soluciones seguras, modernas y adaptadas a las
+                                necesidades específicas de cada negocio. 
+                            </p>
+                        </div>
+                        <a class="mt-4 text-primary font-bold text-sm flex items-center gap-2 group" href="#">
+                            Saber más <i
+                                class="fa-solid fa-arrow-right text-sm group-hover:translate-x-1 transition-transform"></i>
+                        </a>
+                    </div>
+                    <!-- Garantía de Cumplimiento -->
+                    <div
+                        class="lg:col-span-8 bg-surface border border-outline-variant p-6 md:p-8 flex flex-col justify-between min-h-[350px] overflow-hidden">
+                        <div class="flex flex-col md:flex-row gap-8 items-start h-full">
+                            <div class="flex-1 flex flex-col gap-4">
+                                <div class="flex items-center gap-4">
+                                    <i class="fa-solid fa-shield-halved text-4xl text-primary"></i>
+                                    <h3 class="font-headline-md text-headline-md text-primary">Garantía de Cumplimiento
+                                    </h3>
+                                </div>
+                                <ul class="space-y-3 mb-4">
+                                    <li class="flex gap-2 text-sm text-on-surface-variant"><i
+                                            class="fa-solid fa-circle-check text-green-600"></i> Normativa INDECI al día
+                                    </li>
+                                    <li class="flex gap-2 text-sm text-on-surface-variant"><i
+                                            class="fa-solid fa-circle-check text-green-600"></i> Certificaciones ISO
+                                        9001 (en proceso)</li>
+                                    <li class="flex gap-2 text-sm text-on-surface-variant"><i
+                                            class="fa-solid fa-circle-check text-green-600"></i> Protocolos de seguridad
+                                        SOMA</li>
+                                    <li class="flex gap-2 text-sm text-on-surface-variant"><i
+                                            class="fa-solid fa-circle-check text-green-600"></i> Personal técnico
+                                        capacitado y especializado
+                                        SOMA</li>
+                                    <li class="flex gap-2 text-sm text-on-surface-variant"><i
+                                            class="fa-solid fa-circle-check text-green-600"></i> Inspecciones periódicas
+                                        de seguridad y avance de obra
+                                        SOMA</li>
+                                    <li class="flex gap-2 text-sm text-on-surface-variant"><i
+                                            class="fa-solid fa-circle-check text-green-600"></i> Transparencia en
+                                        presupuestos y cotizaciones
+                                        SOMA</li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PORTAFOLIO -->
+        <section class="reveal py-24 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto" id="portafolio">
+            <div class="flex flex-col gap-6 mb-16">
+                <div class="h-1 w-20 bg-primary"></div>
+                <h2 class="font-headline-lg text-headline-lg text-primary">Nuestro Portafolio</h2>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <!-- ITEM 1 -->
+                <div class="reveal-left flex flex-col gap-4">
+                    <img alt="Edificio Residencial Las Palmas" class="w-full aspect-video object-cover shadow-sm"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWfOksAeFJENGuDQstdv26CBlwQaezc3dZwfQGghQRERM-CTkpPO6hjo1hgq749XVDBhVtezeTOYw1r65paXJ0m7cnAP-dmHLbYQsamaTImKgszezyGxwDVJNYJkaP5H7biqZ_5-THDI8e1bzvoa4JyXNPnLZqSfyFCnQBEwpMZ2Wh8L4AXx36FXVR18wfeHNPOHlQvOXcKnmqO9a7yAKUk14EUzLSc2ARAT_AeaYqIuQvUm2yjNDk4ZpnUahw50n8pVW4e2NK620" />
+                    <div class="pl-4 border-l-4 border-primary">
+                        <h3 class="font-headline-md text-sm text-primary">Edificio Residencial Las Palmas</h3>
+                        <p class="font-body-md text-sm text-on-surface-variant">Tiempo de ejecución: 18 meses</p>
+                    </div>
+                </div>
+                <!-- ITEM 2 -->
+                <div class="reveal-right flex flex-col gap-4">
+                    <img alt="Planta Industrial Norte" class="w-full aspect-video object-cover shadow-sm"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuCoKEFhKqNwReP5Ljse52fw7QPNZODiphOxd-_jxkeIfxz4LsqvpDe2S_LGuNYAe3rXFnNlM_2HJPG5owHD5dG6qZcmcu8K5KhM74GWYEh8X_SNxzt6mVsr-3inhz-nVfyj86nrY-9RvxRoUVy5EfJrPMyHyk5b0HZlUh7h0e9aeQd1Hdre4i9vHwz0nTPBrSJQl3ljSHIu0edGmmRAyt1K-Q7y-Y3A-nRPbNm5y8MvkE94NZ65FqQxyCPaG-dneLuCE7tRnrFx2QY" />
+                    <div class="pl-4 border-l-4 border-primary">
+                        <h3 class="font-headline-md text-sm text-primary">Planta Industrial Norte</h3>
+                        <p class="font-body-md text-sm text-on-surface-variant">Tiempo de ejecución: 12 meses</p>
+                    </div>
+                </div>
+                <!-- ITEM 3 -->
+                <div class="reveal-left flex flex-col gap-4">
+                    <img alt="Puente Interoceánico Sur" class="w-full aspect-video object-cover shadow-sm"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuAB3lyT-GvOb1ASw_q8m8sRT1mqCAi5FozhTZ9Fy3TmFw9oHzPxl96A1IEpwH4cl6kZRu1QsY-CjX9IoDCVG2G5LJXy4HyHxXxnSGhrK8dr1s2Si8zajTB159RdNWL5XKGkucpujDMPh5lIlbo2LdVHLFxuiBgfeIBhzr3HrGnmsDTXFiUq0jGt16VGMbicT2R0ko2d8Wwzpv-53F3wTM_1JzlJGDfdqXrM1Ji9lrdk70SDTSFJQVl4HUgIhvCDmuLyMh0pTWUAgRs" />
+                    <div class="pl-4 border-l-4 border-primary">
+                        <h3 class="font-headline-md text-sm text-primary">Puente Interoceánico Sur</h3>
+                        <p class="font-body-md text-sm text-on-surface-variant">Tiempo de ejecución: 24 meses</p>
+                    </div>
+                </div>
+                <!-- ITEM 4 -->
+                <div class="reveal-right flex flex-col gap-4">
+                    <img alt="Centro Corporativo Alfa" class="w-full aspect-video object-cover shadow-sm"
+                        src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKsqUYzwtTOEMy-8ljK_4CeofZCR25WxdfEuSHqEf68-d-BFKRb_GWk1BV1vNTKQT0cgWLN-PmcbfWG91pyWX9yF8QAWFelgx-GS95LZtov_ewQ-RGtOF1_a1Y5PsVb3SKGAEFRUobjQM7I0IUHQX8wOQlkYzS0XvKdqNbuqSXP457q5vcu3o_ifjLETORze5ymGckE8BDAm7Ix8dvpqmUVxeGjfuwVJ4KPHbdIxqsJktvH7w35bciTaTb-NNcUgddp9dBM_RYwLY" />
+                    <div class="pl-4 border-l-4 border-primary">
+                        <h3 class="font-headline-md text-sm text-primary">Centro Corporativo Alfa</h3>
+                        <p class="font-body-md text-sm text-on-surface-variant">Tiempo de ejecución: 14 meses</p>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+        <!--CONTACTO-->
+        <section class="reveal py-24 bg-surface-container-low active" id="contacto">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+                <!--TITULO-->
+                <div class="text-center mb-16 max-w-3xl mx-auto">
+                    <h2 class="font-headline-lg text-headline-lg mb-4 text-primary">Nuestra información de contacto</h2>
+                    <p class="font-body-md text-on-surface-variant">Comunícate con nosotros para responder tus dudas.
+                        O visítanos en nuestras oficinas con previa cita.</p>
+                </div>
+                <div class="flex flex-col gap-12">
+                    <!-- GRID-->
+                    <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                        <!-- CONTACTO EMRPESA -->
+                        <div class="bg-white p-8 md:p-10 border border-outline-variant flex flex-col gap-8 shadow-sm">
+                            <h2 class="font-headline-lg text-headline-lg text-primary mb-2">Contacto de Empresa</h2>
+                            <div class="flex flex-col gap-6">
+                                <!--TELEFONO-->
+                                <div class="reveal-left flex items-center gap-5">
+                                    <div
+                                        class="w-12 h-12 bg-primary-container text-on-primary flex items-center justify-center rounded-none flex-shrink-0">
+                                        <i class="fa-solid fa-phone text-xl"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div
+                                            class="text-[10px] font-label-md text-on-surface-variant uppercase tracking-widest">
+                                            Teléfono Lima</div>
+                                        <div class="font-bold text-primary text-lg">+51 (1) 422-8000</div>
+                                    </div>
+                                </div>
+                                <!--EMAIL-->
+                                <div class="reveal-left flex items-center gap-5">
+                                    <div
+                                        class="w-12 h-12 bg-primary-container text-on-primary flex items-center justify-center rounded-none flex-shrink-0">
+                                        <i class="fa-solid fa-envelope text-xl"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div
+                                            class="text-[10px] font-label-md text-on-surface-variant uppercase tracking-widest">
+                                            Email Corporativo</div>
+                                        <div class="font-bold text-primary text-lg break-all">
+                                            proyectos@constructoralfa.pe</div>
+                                    </div>
+                                </div>
+                                <!--HORARIO ATENCION-->
+                                <div class="reveal-left flex items-center gap-5">
+                                    <div
+                                        class="w-12 h-12 bg-primary-container text-on-primary flex items-center justify-center rounded-none flex-shrink-0">
+                                        <i class="fa-solid fa-clock text-xl"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div
+                                            class="text-[10px] font-label-md text-on-surface-variant uppercase tracking-widest">
+                                            Horario de Atención</div>
+                                        <div class="text-primary text-sm font-medium">Lun-Vie: 08:30-18:30 | Sab:
+                                            09:00-13:00</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- NUMEROS OFICINAS -->
+                        <div class=" bg-white p-8 md:p-10 border border-outline-variant flex flex-col gap-8 shadow-sm">
+                            <h2 class="font-headline-lg text-headline-lg text-primary mb-2">Soporte Técnico</h2>
+                            <div class="flex flex-col gap-6">
+                                <div
+                                    class="reveal-left flex items-center gap-5 p-3 border-l-4 border-brand-orange bg-surface-container">
+                                    <div class="flex flex-col">
+                                        <div
+                                            class="text-[10px] font-label-md text-on-surface-variant uppercase tracking-widest">
+                                            Claudia Ramirez</div>
+                                        <div class="font-bold text-primary text-lg">+51 987 654 321</div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="reveal-left flex items-center gap-5 p-3 border-l-4 border-brand-orange bg-surface-container">
+                                    <div class="flex flex-col">
+                                        <div
+                                            class="text-[10px] font-label-md text-on-surface-variant uppercase tracking-widest">
+                                            Javier López</div>
+                                        <div class="font-bold text-primary text-lg">+51 912 345 678</div>
+                                    </div>
+                                </div>
+                                <div
+                                    class="reveal-left flex items-center gap-5 p-3 border-l-4 border-brand-orange bg-surface-container">
+                                    <div class="flex flex-col">
+                                        <div
+                                            class="text-[10px] font-label-md text-on-surface-variant uppercase tracking-widest">
+                                            Magdalena Aguirre</div>
+                                        <div class="font-bold text-primary text-lg">+51 955 443 221</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- GRID 2 -->
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <!-- PERSONAL -->
+                        <div
+                            class=" lg:col-span-2 bg-white p-8 md:p-10 border border-outline-variant flex flex-col gap-8 shadow-sm">
+                            <h2 class="font-headline-lg text-headline-lg text-primary mb-2">Personal Clave</h2>
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                <!-- CONTACTO 1 -->
+                                <div
+                                    class="contact-item reveal-left flex items-start gap-5 p-4 border-l-4 border-brand-orange bg-surface-container">
+                                    <div
+                                        class="w-10 h-10 bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-user-tie text-lg"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div
+                                            class="text-[10px] font-label-md text-on-surface-variant uppercase tracking-widest mb-1">
+                                            Gerente de Proyectos</div>
+                                        <div class="font-bold text-primary text-lg">Carlos Mendoza</div>
+                                        <div class="text-sm text-primary font-medium mt-1"><i
+                                                class="fa-solid fa-phone mr-2 text-xs"></i>+51 987 654 321</div>
+                                        <div class="text-sm text-primary font-medium opacity-80"><i
+                                                class="fa-solid fa-envelope mr-2 text-xs"></i>cmendoza@constructorasalfa.pe
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- CONTACTO 2 -->
+                                <div
+                                    class="contact-item reveal-right flex items-start gap-5 p-4 border-l-4 border-brand-orange bg-surface-container">
+                                    <div
+                                        class="w-10 h-10 bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-hard-hat text-lg"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div
+                                            class="text-[10px] font-label-md text-on-surface-variant uppercase tracking-widest mb-1">
+                                            Supervisora de Obras</div>
+                                        <div class="font-bold text-primary text-lg">Elena Rivas</div>
+                                        <div class="text-sm text-primary font-medium mt-1"><i
+                                                class="fa-solid fa-phone mr-2 text-xs"></i>+51 912 345 678</div>
+                                        <div class="text-sm text-primary font-medium opacity-80"><i
+                                                class="fa-solid fa-envelope mr-2 text-xs"></i>erivas@constructorasalfa.pe
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- CONTACTO 3 -->
+                                <div
+                                    class="contact-item reveal-left flex items-start gap-5 p-4 border-l-4 border-brand-orange bg-surface-container">
+                                    <div
+                                        class="w-10 h-10 bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-gears text-lg"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div
+                                            class="text-[10px] font-label-md text-on-surface-variant uppercase tracking-widest mb-1">
+                                            Administrador de Finanzas</div>
+                                        <div class="font-bold text-primary text-lg">Ricardo Torres</div>
+                                        <div class="text-sm text-primary font-medium mt-1"><i
+                                                class="fa-solid fa-phone mr-2 text-xs"></i>+51 933 445 566</div>
+                                        <div class="text-sm text-primary font-medium opacity-80"><i
+                                                class="fa-solid fa-envelope mr-2 text-xs"></i>rtorres@constructorasalfa.pe
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--CONTACTO 4-->
+                                <div
+                                    class="contact-item reveal-right flex items-start gap-5 p-4 border-l-4 border-brand-orange bg-surface-container">
+                                    <div
+                                        class="w-10 h-10 bg-primary-container text-on-primary flex items-center justify-center flex-shrink-0">
+                                        <i class="fa-solid fa-gears text-lg"></i>
+                                    </div>
+                                    <div class="flex flex-col">
+                                        <div
+                                            class="text-[10px] font-label-md text-on-surface-variant uppercase tracking-widest mb-1">
+                                            Supervisor de Obras</div>
+                                        <div class="font-bold text-primary text-lg">César Perez</div>
+                                        <div class="text-sm text-primary font-medium mt-1"><i
+                                                class="fa-solid fa-phone mr-2 text-xs"></i>+51 978 515 224</div>
+                                        <div class="text-sm text-primary font-medium opacity-80"><i
+                                                class="fa-solid fa-envelope mr-2 text-xs"></i>cperez@constructorasalfa.pe
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!-- MAPA -->
+                        <div class="reveal-right lg:col-span-1 flex flex-col gap-4 active">
+                            <div
+                                class="bg-surface-container-highest border border-outline-variant min-h-[300px] flex flex-col items-center justify-center p-6 text-center relative overflow-hidden group">
+                                <div class="absolute inset-0 bg-primary/5 group-hover:bg-primary/10 transition-colors">
+                                </div>
+                                <i class="fa-solid fa-location-dot text-5xl text-brand-orange mb-4"></i>
+                                <h3 class="font-headline-md text-primary mb-2">Visítanos</h3>
+                                <p class="text-on-surface-variant text-sm mb-4">Calle Las Orquídeas 444, San
+                                    Isidro<br>Lima, Perú</p>
+                                <div
+                                    class="w-full h-[250px] overflow-hidden rounded border border-outline-variant shadow-sm">
+                                    <iframe
+                                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.23456789!2d-77.0282!3d-12.0945!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c865f1c9f7a7%3A0x4e6b2c2b2c2b2c2b!2sSan%20Isidro%2C%20Lima!5e0!3m2!1ses-419!2spe!4v1716630000000!5m2!1ses-419!2spe"
+                                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                                </div>
+                                <a href="https://maps.app.goo.gl/yxoZr3ukRozBHmUU9" target="_blank"
+                                    rel="noopener noreferrer"
+                                    class="relative z-50 group mt-6 inline-flex items-center gap-2 text-primary font-bold text-sm">
+
+                                    <span class="group-hover:underline">
+                                        Abrir en Google Maps
+                                    </span>
+
+                                    <i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>
+
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- OPINIONES -->
+        <section class="reveal py-24 bg-surface active" id="testimonios">
+            <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
+                <div class="text-center mb-16">
+                    <h2 class="font-headline-lg text-headline-lg text-primary">Lo que dicen nuestros clientes</h2>
+                    <div class="h-1 w-24 bg-secondary-container mx-auto mt-4"></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- TESTIMONIO 1 -->
+                    <div
+                        class="bg-surface-container-low p-8 border border-outline-variant flex flex-col justify-between h-full hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="flex text-secondary-container mb-4 text-sm">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="font-body-md text-on-surface-variant italic mb-6">"El diseño estructural de
+                                nuestras nuevas oficinas en Miraflores fue impecable. Destaco su precisión técnica y el
+                                estricto cumplimiento de los plazos acordados."</p>
+                        </div>
+                        <div>
+                            <div class="font-headline-md text-sm text-primary">Ing. Ricardo Alva</div>
+                            <div class="text-xs font-label-md text-outline">Gerente de Proyectos, Inmobiliaria Pacífico
+                            </div>
+                        </div>
+                    </div>
+                    <!-- TESTIMONIO 2 -->
+                    <div
+                        class="bg-primary text-on-primary p-8 border border-primary flex flex-col justify-between h-full shadow-lg">
+                        <div>
+                            <div class="flex text-secondary-fixed mb-4 text-sm">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="font-body-md italic mb-6 opacity-90">"La supervisión de obra de Constructoras Alfa
+                                nos brindó la tranquilidad de saber que cada detalle cumplía con la normativa SOMA. Son
+                                socios estratégicos de confianza."</p>
+                        </div>
+                        <div>
+                            <div class="font-headline-md text-sm text-secondary-fixed">Dra. Elena Santillán</div>
+                            <div class="text-xs font-label-md opacity-70 uppercase tracking-wider">Directora Operativa,
+                                Retail Perú S.A.</div>
+                        </div>
+                    </div>
+                    <!-- TESTIMONIO 3 -->
+                    <div
+                        class="bg-surface-container-low p-8 border border-outline-variant flex flex-col justify-between h-full hover:shadow-md transition-shadow">
+                        <div>
+                            <div class="flex text-secondary-container mb-4 text-sm">
+                                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                    class="fa-solid fa-star"></i>
+                            </div>
+                            <p class="font-body-md text-on-surface-variant italic mb-6">"Realizamos la remodelación de
+                                nuestra cadena de locales con ellos. La calidad técnica en los acabados y el respeto por
+                                el presupuesto original fueron determinantes."</p>
+                        </div>
+                        <div>
+                            <div class="font-headline-md text-sm text-primary">Carlos Mendoza</div>
+                            <div class="text-xs font-label-md text-outline">CEO, Corporación Gastronómica Lima</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ESTADISTICAS -->
+        <section class="bg-surface-container-low border-y border-outline-variant animate-fadeInUp">
+            <div class="max-w-container-max mx-auto px-margin-desktop py-12">
+                <div class="grid grid-cols-1 md:grid-cols-4 items-center">
+                    <div
+                        class="stay-item py-8 md:py-0 md:px-6 text-center border-b border-outline md:border-b-0 md:border-r border-outline-variant last:border-0">
+                        <p class="text-display-lg-mobile md:text-headline-lg font-bold text-primary">15+</p>
+                        <p class="text-label-md font-label-md text-on-surface-variant uppercase tracking-widest mt-1">
+                            Años de
+                            Trayectoria</p>
+                    </div>
+                    <div
+                        class="py-8 md:py-0 md:px-6 text-center border-b border-outline md:border-b-0 md:border-r border-outline-variant last:border-0">
+                        <p class="text-display-lg-mobile md:text-headline-lg font-bold text-primary">450+</p>
+                        <p class="text-label-md font-label-md text-on-surface-variant uppercase tracking-widest mt-1">
+                            Proyectos
+                            Supervisados</p>
+                    </div>
+                    <div
+                        class="py-8 md:py-0 md:px-6 text-center border-b border-outline md:border-b-0 md:border-r border-outline-variant last:border-0">
+                        <p class="text-display-lg-mobile md:text-headline-lg font-bold text-primary">120</p>
+                        <p class="text-label-md font-label-md text-on-surface-variant uppercase tracking-widest mt-1">
+                            Ingenieros
+                            Especialistas</p>
+                    </div>
+                    <div
+                        class="py-8 md:py-0 md:px-6 text-center border-b border-outline md:border-b-0 md:border-r border-outline-variant last:border-0">
+                        <p class="text-display-lg-mobile md:text-headline-lg font-bold text-primary">98%</p>
+                        <p class="text-label-md font-label-md text-on-surface-variant uppercase tracking-widest mt-1">
+                            Clientes
+                            Satisfechos</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- PIE DE PAGINA -->
+    <footer
+        class="w-full py-12 px-margin-desktop bg-tertiary dark:bg-tertiary-container text-on-tertiary dark:text-on-tertiary-container border-t border-outline-variant dark:border-outline">
+        <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-start gap-12">
+            <!--1° CONTAINER-->
+            <div class="max-w-sm">
+                <!--DESCRIPCION Y LOGO-->
+                <div>
+                    <span class="text-headline-md font-headline-md font-bold text-on-tertiary">Constructoras Alfa</span>
+                    <p class="mt-4 font-body-md text-body-md opacity-80">Expertos en la supervisión y ejecución de obras
+                        civiles
+                        con el compromiso de construir un Perú más fuerte y seguro.</p>
+                </div>
+
+                <!--REDES SOCIALES-->
+                <div class="mt-8">
+                    <h4 class="font-label-md text-label-md mb-6 uppercase tracking-widest text-on-tertiary font-bold">
+                        Redes
+                        sociales</h4>
+                    <div class="flex flex-row gap-6">
+                        <a href="https://www.youtube.com" target="_blank" class="hover:opacity-80 transition-opacity">
+                            <span class="fa-brands fa-youtube text-2xl" style="color: #ffdbcd;"></span>
+                        </a>
+                        <a href="https://www.instagram.com" target="_blank" class="hover:opacity-80 transition-opacity">
+                            <span class="fa-brands fa-instagram text-2xl" style="color: #ffdbcd;"></span>
+                        </a>
+                        <a href="https://www.facebook.com" target="_blank" class="hover:opacity-80 transition-opacity">
+                            <span class="fa-brands fa-facebook text-2xl" style="color: #ffdbcd;"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!--2° CONTAINER-->
+            <div class="flex flex-col md:flex-row gap-16">
+                <!--NAVBAR FOOTER-->
+                <div>
+                    <h4 class="font-label-md text-label-md mb-6 uppercase tracking-widest text-on-tertiary font-bold">
+                        Navegación
+                    </h4>
+                    <ul class="space-y-3">
+                        <li><a class="font-label-md text-label-md opacity-80 hover:text-secondary-fixed-dim transition-colors"
+                                href="#inicio">Inicio</a></li>
+                        <li><a class="font-label-md text-label-md opacity-80 hover:text-secondary-fixed-dim transition-colors"
+                                href="#nosotros">Nosotros</a></li>
+                        <li><a class="font-label-md text-label-md opacity-80 hover:text-secondary-fixed-dim transition-colors"
+                                href="#servicios">Servicios</a></li>
+                        <li><a class="font-label-md text-label-md text-secondary-fixed font-bold"
+                                href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--LEGAL. ESTETICO-->
+                <div>
+                    <h4 class="font-label-md text-label-md mb-6 uppercase tracking-widest text-on-tertiary font-bold">
+                        Legal</h4>
+                    <ul class="space-y-3">
+                        <li><a class="font-label-md text-label-md opacity-80 hover:text-secondary-fixed-dim transition-colors"
+                                href="#">Política de Privacidad</a></li>
+                        <li><a class="font-label-md text-label-md opacity-80 hover:text-secondary-fixed-dim transition-colors"
+                                href="#">Términos de Servicio</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--COPYRIGHT-->
+        <div
+            class="max-w-container-max mx-auto mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4">
+            <p class="font-body-md text-body-md opacity-60">© 2024 Constructoras Alfa. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+    <script>
+        // Drawer Logic
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const closeDrawer = document.getElementById('closeDrawer');
+        const mobileDrawer = document.getElementById('mobileDrawer');
+        const drawerAside = mobileDrawer.querySelector('aside');
+
+        function toggleDrawer(open) {
+            if (open) {
+                mobileDrawer.classList.remove('pointer-events-none', 'opacity-0');
+                mobileDrawer.classList.add('opacity-100');
+                drawerAside.classList.remove('-translate-x-full');
+                document.body.style.overflow = 'hidden';
+            } else {
+                mobileDrawer.classList.add('opacity-0', 'pointer-events-none');
+                mobileDrawer.classList.remove('opacity-100');
+                drawerAside.classList.add('-translate-x-full');
+                document.body.style.overflow = '';
+            }
+        }
+
+        mobileMenuBtn.addEventListener('click', () => toggleDrawer(true));
+        closeDrawer.addEventListener('click', () => toggleDrawer(false));
+        mobileDrawer.addEventListener('click', (e) => {
+            if (e.target === mobileDrawer) toggleDrawer(false);
+        });
+
+        // SCROLL
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+
+                e.preventDefault();
+                const target = document.querySelector(targetId);
+                if (target) {
+                    toggleDrawer(false);
+                    const headerOffset = 80;
+                    const elementPosition = target.getBoundingClientRect().top;
+                    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                    window.scrollTo({
+                        top: offsetPosition,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+
+        //ANIMACIONES
+        const revealOptions = {
+            threshold: 0.15
+        };
+
+        const revealObserver = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, revealOptions);
+
+        document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(section => {
+            revealObserver.observe(section);
+        });
+    </script>
+</body>
+
+</html>
