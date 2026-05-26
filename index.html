@@ -129,6 +129,12 @@
             font-weight: 700 !important;
         }
 
+        .nav-link-mobile.nav-active-mobile,
+        .nav-link-mobile.nav-active-mobile:hover {
+            background-color: #1b365d !important;
+            color: #f9f9f9 !important;
+        }
+
         .reveal.active {
             animation: fadeInUp 0.8s ease-out forwards;
         }
@@ -177,7 +183,7 @@
             }
         }
 
-        @media (max-width: 370px) {
+        @media (max-width: 1150px) {
             .contact-item {
                 flex-direction: column !important;
                 align-items: center !important;
@@ -214,7 +220,11 @@
                     <a class="nav-link font-label-md text-label-md text-on-surface-variant hover:text-primary border-b-2 border-transparent transition-colors flex items-center h-full"
                         href="#servicios">Servicios</a>
                     <a class="nav-link font-label-md text-label-md text-on-surface-variant hover:text-primary border-b-2 border-transparent transition-colors flex items-center h-full"
+                        href="#portafolio">Portafolio</a>
+                    <a class="nav-link font-label-md text-label-md text-on-surface-variant hover:text-primary border-b-2 border-transparent transition-colors flex items-center h-full"
                         href="#contacto">Contacto</a>
+                    <a class="nav-link font-label-md text-label-md text-on-surface-variant hover:text-primary border-b-2 border-transparent transition-colors flex items-center h-full"
+                        href="#opiniones">Opiniones</a>
                 </div>
             </div>
 
@@ -253,21 +263,29 @@
             </div>
             <!--PAGINAS-->
             <div class="p-4 flex flex-col gap-2">
-                <a class="bg-primary-container text-on-primary-container rounded-full px-4 py-3 flex items-center gap-4 font-label-md"
+                <a class="nav-link-mobile nav-active-mobile text-on-surface-variant hover:bg-surface-container-high rounded-full px-4 py-3 flex items-center gap-4 font-label-md transition-colors"
                     href="#inicio">
                     Inicio
                 </a>
-                <a class="text-on-surface-variant hover:bg-surface-container-high rounded-full px-4 py-3 flex items-center gap-4 font-label-md transition-colors"
+                <a class="nav-link-mobile text-on-surface-variant hover:bg-surface-container-high rounded-full px-4 py-3 flex items-center gap-4 font-label-md transition-colors"
                     href="#nosotros">
                     Nosotros
                 </a>
-                <a class="text-on-surface-variant hover:bg-surface-container-high rounded-full px-4 py-3 flex items-center gap-4 font-label-md transition-colors"
+                <a class="nav-link-mobile text-on-surface-variant hover:bg-surface-container-high rounded-full px-4 py-3 flex items-center gap-4 font-label-md transition-colors"
                     href="#servicios">
                     Servicios
                 </a>
-                <a class="text-on-surface-variant hover:bg-surface-container-high rounded-full px-4 py-3 flex items-center gap-4 font-label-md transition-colors"
+                <a class="nav-link-mobile text-on-surface-variant hover:bg-surface-container-high rounded-full px-4 py-3 flex items-center gap-4 font-label-md transition-colors"
+                    href="#portafolio">
+                    Portafolio
+                </a>
+                <a class="nav-link-mobile text-on-surface-variant hover:bg-surface-container-high rounded-full px-4 py-3 flex items-center gap-4 font-label-md transition-colors"
                     href="#contacto">
                     Contacto
+                </a>
+                <a class="nav-link-mobile text-on-surface-variant hover:bg-surface-container-high rounded-full px-4 py-3 flex items-center gap-4 font-label-md transition-colors"
+                    href="#opiniones">
+                    Opiniones
                 </a>
             </div>
             
@@ -363,7 +381,7 @@
 
             <!--CUALIDADES-->
             <div class="max-w-2xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-2 gap-4 w-full">
-                <div class="flex items-center gap-4 p-4 bg-surface-container border border-outline-variant">
+                <div class="reveal-left flex items-center gap-4 p-4 bg-surface-container border border-outline-variant">
                     <i class="fa-solid fa-check text-primary mt-1 text-2xl" data-icon="verified"></i>
                     <div>
                         <h4 class="font-headline-md text-headline-md text-sm mb-1">Expertos nacionales</h4>
@@ -372,7 +390,7 @@
                             en Perú (RNE).</p>
                     </div>
                 </div>
-                <div class="flex items-center gap-4 p-4 bg-surface-container border border-outline-variant">
+                <div class="reveal-right flex items-center gap-4 p-4 bg-surface-container border border-outline-variant">
                     <i class="fa-solid fa-forward-fast text-primary mt-1 text-2xl" data-icon="speed"></i>
                     <div>
                         <h4 class="font-headline-md text-headline-md text-sm mb-1">Eficiencia Operativa</h4>
@@ -395,7 +413,7 @@
                 <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-12 auto-rows-auto">
                     <!-- Diseño Estructural -->
                     <div
-                        class="lg:col-span-8 group relative overflow-hidden bg-white border border-outline-variant p-6 md:p-8 flex flex-col justify-end min-h-[300px]">
+                        class="reveal-left lg:col-span-8 group relative overflow-hidden bg-white border border-outline-variant p-6 md:p-8 flex flex-col justify-end min-h-[300px]">
                         <img class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105 opacity-20"
                             src="https://lh3.googleusercontent.com/aida-public/AB6AXuBj4gcC-5YV7Qso23RK37e6_ro3y1aWIC0xYs-rGRp7kS3sWQGhRCVsihsbclaQVdxgOFYJ5GPFEU0k0Gba5VZ1crNiYwf2QhUng4hq9DI2kTysaaQE0gy1twjg5_uf0hpVor-wfoLZGi-OZLVwfvMZjFAnMPsGGJe6TSL4gWXSBfcVvGf5Pgiv6Yn0pMWgNx0AMf0QH0uef3VkJeW67psWcUkLjH8nMxsufT3xaIuOgCBzO3aWWIOvPhWN1g-3pHhVAOGpqaXB4gs" />
                         <div class="relative z-10">
@@ -416,7 +434,7 @@
                     </div>
                     <!-- Supervisión de Obras -->
                     <div
-                        class="lg:col-span-4 bg-primary text-on-primary p-6 md:p-8 flex flex-col justify-center border border-outline-variant min-h-[300px]">
+                        class="reveal-right lg:col-span-4 bg-primary text-on-primary p-6 md:p-8 flex flex-col justify-center border border-outline-variant min-h-[300px]">
                         <div class="flex items-center gap-4 mb-2">
                             <i class="fa-solid fa-eye text-4xl text-on-primary-container"></i>
                             <h3 class="font-headline-md text-headline-md text-secondary-fixed">Supervisión de Obras</h3>
@@ -433,7 +451,7 @@
                     </div>
                     <!-- Remodelación PYMES -->
                     <div
-                        class="lg:col-span-4 bg-white border border-outline-variant p-6 md:p-8 flex flex-col justify-between min-h-[350px]">
+                        class="reveal-left lg:col-span-4 bg-white border border-outline-variant p-6 md:p-8 flex flex-col justify-between min-h-[350px]">
                         <div>
                             <div class="flex items-center gap-4 mb-4">
                                 <i class="fa-solid fa-shop text-4xl text-secondary"></i>
@@ -456,7 +474,7 @@
                     </div>
                     <!-- Garantía de Cumplimiento -->
                     <div
-                        class="lg:col-span-8 bg-surface border border-outline-variant p-6 md:p-8 flex flex-col justify-between min-h-[350px] overflow-hidden">
+                        class="reveal-right lg:col-span-8 bg-surface border border-outline-variant p-6 md:p-8 flex flex-col justify-between min-h-[350px] overflow-hidden">
                         <div class="flex flex-col md:flex-row gap-8 items-start h-full">
                             <div class="flex-1 flex flex-col gap-4">
                                 <div class="flex items-center gap-4">
@@ -760,7 +778,7 @@
         </section>
 
         <!-- OPINIONES -->
-        <section class="reveal py-24 bg-surface active" id="testimonios">
+        <section class="reveal py-24 bg-surface active" id="opiniones">
             <div class="px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto">
                 <div class="text-center mb-16">
                     <h2 class="font-headline-lg text-headline-lg text-primary">Lo que dicen nuestros clientes</h2>
@@ -910,9 +928,13 @@
                                 href="#nosotros">Nosotros</a></li>
                         <li><a class="font-label-md text-label-md opacity-80 hover:text-secondary-fixed-dim transition-colors"
                                 href="#servicios">Servicios</a></li>
+                                <li><a class="font-label-md text-label-md opacity-80 hover:text-secondary-fixed-dim transition-colors"
+                                href="#portafolio">Portafolio</a></li>
                         <li><a class="font-label-md text-label-md text-secondary-fixed font-bold"
                                 href="#contacto">Contacto</a>
                         </li>
+                        <li><a class="font-label-md text-label-md opacity-80 hover:text-secondary-fixed-dim transition-colors"
+                                href="#opiniones">Opiniones</a></li>
                     </ul>
                 </div>
                 <!--LEGAL. ESTETICO-->
@@ -1005,29 +1027,37 @@
 
         // SCROLLSPY NAVBAR
         const navLinks = document.querySelectorAll('.nav-link');
-        const navSections = document.querySelectorAll('main section[id]');
+        const navLinksMobile = document.querySelectorAll('.nav-link-mobile');
+        const navHrefs = new Set([...navLinks].map(l => l.getAttribute('href')));
+        const navSections = [...document.querySelectorAll('main section[id]')]
+            .filter(s => navHrefs.has(`#${s.id}`));
 
         function setActiveLink(id) {
             navLinks.forEach(link => {
                 const isActive = link.getAttribute('href') === `#${id}`;
                 link.classList.toggle('nav-active', isActive);
             });
+            navLinksMobile.forEach(link => {
+                const isActive = link.getAttribute('href') === `#${id}`;
+                link.classList.toggle('nav-active-mobile', isActive);
+            });
         }
 
-        const navObserver = new IntersectionObserver((entries) => {
-            const visible = entries
-                .filter(e => e.isIntersecting)
-                .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
-            if (visible) setActiveLink(visible.target.id);
-        }, {
-            rootMargin: '-40% 0px -40% 0px',
-            threshold: 0
-        });
+        function updateActiveLink() {
+            const scrollPos = window.scrollY + 120;
+            let activeId = null;
+            navSections.forEach(section => {
+                if (section.offsetTop <= scrollPos) {
+                    activeId = section.id;
+                }
+            });
+            if (activeId) setActiveLink(activeId);
+        }
 
-        navSections.forEach(section => navObserver.observe(section));
+        window.addEventListener('scroll', updateActiveLink, { passive: true });
+        window.addEventListener('resize', updateActiveLink, { passive: true });
+        updateActiveLink();
     </script>
 </body>
-
-</html>
 
 </html>
