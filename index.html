@@ -123,6 +123,12 @@
             backdrop-filter: blur(12px);
         }
 
+        .nav-link.nav-active {
+            color: #fd6c22 !important;
+            border-bottom-color: #fd6c22 !important;
+            font-weight: 700 !important;
+        }
+
         .reveal.active {
             animation: fadeInUp 0.8s ease-out forwards;
         }
@@ -201,13 +207,13 @@
                     src="https://lh3.googleusercontent.com/aida/ADBb0uh5Igsjq0z0-KTPLA2b2fBxr1GgdvSahuHLdbwEXVHPok3oDK0qSGkimgD_-noU2GsvUnDc-2UdTSy5Ud9gowOcxkVdlLE5BswnMDT2zyJ4GSoiNVVPqNckYqZ1j-6WLvi92ocedugz8_P9MT5vpfvGJa5leDYHop25ci_2C0vnraix9VvgFvdSm0TlNYq38ZQepmzBQfh_dWOyIN3l40s4ez9FYLHtcvmrf-PZMrTIOeU74kLowAYO3yU" />
                 <!--PAGINAS DE NAVBAR-->
                 <div class="hidden lg:flex gap-8 items-center h-full">
-                    <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors flex items-center h-full"
+                    <a class="nav-link font-label-md text-label-md text-on-surface-variant hover:text-primary border-b-2 border-transparent transition-colors flex items-center h-full"
                         href="#inicio">Inicio</a>
-                    <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors flex items-center h-full"
+                    <a class="nav-link font-label-md text-label-md text-on-surface-variant hover:text-primary border-b-2 border-transparent transition-colors flex items-center h-full"
                         href="#nosotros">Nosotros</a>
-                    <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors flex items-center h-full"
+                    <a class="nav-link font-label-md text-label-md text-on-surface-variant hover:text-primary border-b-2 border-transparent transition-colors flex items-center h-full"
                         href="#servicios">Servicios</a>
-                    <a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors flex items-center h-full"
+                    <a class="nav-link font-label-md text-label-md text-on-surface-variant hover:text-primary border-b-2 border-transparent transition-colors flex items-center h-full"
                         href="#contacto">Contacto</a>
                 </div>
             </div>
@@ -270,7 +276,7 @@
 
     <main>
         <!--HERO-->
-        <section
+        <section id="inicio"
             class="reveal active animate-fade-in-up relative w-full min-h-[85vh] flex items-center overflow-hidden">
             <div class="absolute inset-0 z-0">
                 <div
@@ -822,7 +828,7 @@
         </section>
 
         <!-- ESTADISTICAS -->
-        <section class="bg-surface-container-low border-y border-outline-variant animate-fadeInUp">
+        <section class="reveal bg-surface-container-low border-y border-outline-variant">
             <div class="max-w-container-max mx-auto px-margin-desktop py-12">
                 <div class="grid grid-cols-1 md:grid-cols-4 items-center">
                     <div
@@ -996,7 +1002,32 @@
         document.querySelectorAll('.reveal,.reveal-left,.reveal-right').forEach(section => {
             revealObserver.observe(section);
         });
+
+        // SCROLLSPY NAVBAR
+        const navLinks = document.querySelectorAll('.nav-link');
+        const navSections = document.querySelectorAll('main section[id]');
+
+        function setActiveLink(id) {
+            navLinks.forEach(link => {
+                const isActive = link.getAttribute('href') === `#${id}`;
+                link.classList.toggle('nav-active', isActive);
+            });
+        }
+
+        const navObserver = new IntersectionObserver((entries) => {
+            const visible = entries
+                .filter(e => e.isIntersecting)
+                .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+            if (visible) setActiveLink(visible.target.id);
+        }, {
+            rootMargin: '-40% 0px -40% 0px',
+            threshold: 0
+        });
+
+        navSections.forEach(section => navObserver.observe(section));
     </script>
 </body>
+
+</html>
 
 </html>
